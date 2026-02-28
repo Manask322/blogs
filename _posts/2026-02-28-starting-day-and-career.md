@@ -1,6 +1,6 @@
 ---
 title: "Starting Your Day and Career: A Developer's Growth Mindset"
-date: 2026-02-28
+date: 2026-02-26
 tags: [career, learning, software-development, growth, productivity, habits]
 excerpt: "How software developers can approach each day and their careers with curiosity, continuous learning, and systematic growth through actionable routines and practices."
 ---

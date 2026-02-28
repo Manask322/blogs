@@ -11,4 +11,3 @@ Disallow: /Gemfile*
 Disallow: /_config.yml
 
 # Allow search engines to crawl everything else
-Crawl-delay: 1

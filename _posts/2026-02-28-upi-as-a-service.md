@@ -1,6 +1,6 @@
 ---
 title: "UPI as a Service: How Digital Payments Flow"
-date: 2026-02-28
+date: 2026-02-27
 tags: [fintech, upi, payments, system-design, real-time-payments]
 excerpt: "Understanding how UPI works at its core - from payer VPA to payee VPA, the actors involved, and the two-factor authentication that makes it secure."
 ---

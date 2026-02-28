@@ -3,13 +3,20 @@ layout: default
 title: Home
 ---
 
-<div class="container">
+<div class="page-wrapper">
     <section class="hero">
-        <h2>Welcome to My Blog</h2>
-        <p>Exploring software development, system design, and career growth through practical insights and real-world experiences.</p>
+        <div class="hero-images">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=300&fit=crop" alt="Laptop and coding workspace" class="hero-img hero-img-main">
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=200&fit=crop" alt="Developer at work" class="hero-img hero-img-secondary">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=200&fit=crop" alt="Code on screen" class="hero-img hero-img-secondary">
+        </div>
+        <div class="hero-content">
+            <h2>Welcome to My Blog</h2>
+            <p>Exploring software development, system design, and career growth through practical insights and real-world experiences.</p>
+        </div>
     </section>
 
-    <section class="blog-list">
+    <section class="blog-list container">
         <h2>Latest Posts</h2>
         
         {% if site.posts.size > 0 %}
@@ -41,5 +48,13 @@ title: Home
                 <p>No blog posts yet. Check back soon!</p>
             </div>
         {% endif %}
+    </section>
+
+    <section class="tech-showcase">
+        <div class="tech-images-row">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=250&fit=crop" alt="Tech workspace with laptop">
+            <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400&h=250&fit=crop" alt="Programming setup">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop" alt="Developer coding">
+        </div>
     </section>
 </div>
