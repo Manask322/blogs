@@ -86,6 +86,24 @@
         </div>
     </aside>
 
+    {% unless page.layout == 'post' %}
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <div class="nav-brand">
+                    <a href="https://manask322.github.io/">Manas Kinkar</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="https://manask322.github.io/">Home</a></li>
+                    <li><a href="https://manask322.github.io/#projects">Projects</a></li>
+                    <li><a href="https://manask322.github.io/#experience">Experience</a></li>
+                    <li><a href="{{ '/' | relative_url }}" class="active">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    {% endunless %}
+
     <main class="site-main">
         {{ content }}
     </main>
