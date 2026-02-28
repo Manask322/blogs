@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://manask322.github.io/blogs/sitemap.xml
+
+# Block access to admin/config files (if any)
+Disallow: /.git/
+Disallow: /_site/
+Disallow: /Gemfile*
+Disallow: /_config.yml
+
+# Allow search engines to crawl everything else
+Crawl-delay: 1

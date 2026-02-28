@@ -1,7 +1,12 @@
 # Site settings
 title: "Manas Kinkar's Blogs"
-description: "Technical blog covering software development, system design, and developer insights"
+description: "Technical blog covering software development, system design, and developer insights by Manas Kinkar. Explore topics in coding confidence, UPI systems, and career growth."
 author: "Manas Kinkar"
+
+# SEO settings (add your own values after setup)
+# google_analytics: G-XXXXXXXXXX
+# google_site_verification: your_verification_code_here
+# bing_site_verification: your_bing_verification_code
 
 # GitHub Pages deployment
 url: "https://manask322.github.io"
