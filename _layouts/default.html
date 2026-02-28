@@ -71,14 +71,20 @@
     {% include analytics.html %}
 </head>
 <body>
-    {% unless page.layout == 'post' %}
-    <header class="site-header">
-        <div class="container">
-            <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-            <p class="subtitle">{{ site.description }}</p>
-        </div>
-    </header>
-    {% endunless %}
+    <aside class="emoji-rail emoji-rail-left" aria-hidden="true">
+        <span>💻</span>
+        <span>⚙️</span>
+        <span>🧠</span>
+        <span>🚀</span>
+        <span>☕</span>
+    </aside>
+    <aside class="emoji-rail emoji-rail-right" aria-hidden="true">
+        <span>🛠️</span>
+        <span>📚</span>
+        <span>✨</span>
+        <span>🔍</span>
+        <span>🧩</span>
+    </aside>
 
     <main class="site-main">
         {{ content }}
