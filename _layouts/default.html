@@ -71,6 +71,24 @@
     {% include analytics.html %}
 </head>
 <body>
-    {{ content }}
+    {% unless page.layout == 'post' %}
+    <header class="site-header">
+        <div class="container">
+            <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+            <p class="subtitle">{{ site.description }}</p>
+        </div>
+    </header>
+    {% endunless %}
+
+    <main class="site-main">
+        {{ content }}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author }}. All rights reserved.</p>
+            <p><a href="https://manask322.github.io">← Back to Main Website</a></p>
+        </div>
+    </footer>
 </body>
 </html>
