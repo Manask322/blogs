@@ -1,0 +1,41 @@
+# Site settings
+title: "Manas Kinkar's Blogs"
+description: "Technical blog covering software development, system design, and developer insights"
+author: "Manas Kinkar"
+
+# GitHub Pages deployment
+url: "https://manask322.github.io"
+baseurl: "/blogs"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+# Collections
+collections:
+  posts:
+    output: true
+
+# Plugins (supported by GitHub Pages)
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .git/
+  - .github/
+
+# Default values
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Manas Kinkar"
