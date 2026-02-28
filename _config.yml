@@ -15,7 +15,7 @@ baseurl: "/blogs"
 # Build settings
 markdown: kramdown
 highlighter: rouge
-permalink: /:year/:month/:day/:title/
+permalink: /posts/:title/
 
 # Collections
 collections:
