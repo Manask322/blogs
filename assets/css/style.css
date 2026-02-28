@@ -76,28 +76,39 @@ body {
     padding: 0 clamp(2rem, 8vw, 5rem);
 }
 
-/* Emoji side rails */
-.emoji-rail {
+/* Clean emoji decorations */
+.emoji-decoration {
     position: fixed;
-    top: 120px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
     pointer-events: none;
 }
 
-.emoji-rail span {
-    font-size: 1.5rem;
-    opacity: 0.85;
+.emoji-left {
+    left: clamp(1rem, 3vw, 2.5rem);
 }
 
-.emoji-rail-left {
-    left: clamp(0.75rem, 2vw, 2rem);
+.emoji-right {
+    right: clamp(1rem, 3vw, 2.5rem);
 }
 
-.emoji-rail-right {
-    right: clamp(0.75rem, 2vw, 2rem);
+.emoji-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.emoji-item {
+    font-size: 2rem;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+    display: block;
+}
+
+.emoji-item:hover {
+    opacity: 0.9;
 }
 
 /* Site Header */
@@ -163,11 +174,6 @@ body {
     line-height: 1.6;
 }
 
-.hero-emoji-line {
-    margin-top: 1rem;
-    font-size: 1.4rem;
-    letter-spacing: 0.25rem;
-}
 
 /* Tech showcase */
 .tech-showcase {
@@ -544,7 +550,7 @@ nav a:hover {
         padding: 2rem 0;
     }
 
-    .emoji-rail {
+    .emoji-decoration {
         display: none;
     }
     
