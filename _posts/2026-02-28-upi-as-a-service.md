@@ -79,17 +79,17 @@ The payee requests payment:
 
 ## Step-by-Step Transaction Flow
 
-Let's trace a complete UPI transaction from Priya (`priya@paytm`) sending ₹500 to Raj (`raj@oksbi`):
+Let's trace a complete UPI transaction from Megha (`megha@paytm`) sending ₹500 to Manas (`manas@oksbi`):
 
 ### Phase 1: Transaction Initiation
-1. **Priya opens her UPI app** and selects "Pay to Contact"
-2. **Enters Raj's VPA** (`raj@oksbi`) and amount (₹500)
+1. **Megha opens her UPI app** and selects "Pay to Contact"
+2. **Enters Manas's VPA** (`manas@oksbi`) and amount (₹500)
 3. **App validates format** and shows transaction preview
-4. **Priya enters her UPI PIN** for authorization
+4. **Megha enters her UPI PIN** for authorization
 
 ### Phase 2: PSP Processing
 5. **Paytm PSP receives request** and performs initial validation:
-   - Checks if Priya's account has sufficient balance
+   - Checks if Megha's account has sufficient balance
    - Validates transaction limits (daily/per-transaction)
    - Verifies UPI PIN against stored hash
 
@@ -101,15 +101,15 @@ Let's trace a complete UPI transaction from Priya (`priya@paytm`) sending ₹500
    - Generates unique transaction reference number
 
 ### Phase 4: Payee PSP Processing
-8. **NPCI routes to SBI PSP** (Raj's bank)
+8. **NPCI routes to SBI PSP** (Manas's bank)
 9. **SBI PSP validates**:
-   - Confirms Raj's account is active and can receive funds
+   - Confirms Manas's account is active and can receive funds
    - Checks for any account-level restrictions
    - Prepares to credit the account
 
 ### Phase 5: Settlement and Confirmation
-10. **SBI credits ₹500 to Raj's account**
-11. **Confirmation flows back**: SBI → NPCI → Paytm PSP → Priya's app
+10. **SBI credits ₹500 to Manas's account**
+11. **Confirmation flows back**: SBI → NPCI → Paytm PSP → Megha's app
 12. **Real-time settlement** occurs between banks through NPCI
 13. **Both parties receive transaction notifications**
 
